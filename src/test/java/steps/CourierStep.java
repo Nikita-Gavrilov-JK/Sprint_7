@@ -7,7 +7,7 @@ import java.util.Map;
 
 import static io.restassured.RestAssured.given;
 
-public class CourierStepTest {
+public class CourierStep {
     private static final String BASE_URL = "https://qa-scooter.praktikum-services.ru";
 
     @Step("Создание курьера")

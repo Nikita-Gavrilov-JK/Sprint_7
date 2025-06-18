@@ -4,7 +4,7 @@ import io.restassured.response.Response;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import steps.CourierStepTest;
+import steps.CourierStep;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -12,7 +12,7 @@ import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.notNullValue;
 
 public class LoginCourierTest {
-    CourierStepTest courierSteps = new CourierStepTest();
+    CourierStep courierSteps = new CourierStep();
     int courierId;
 
     Map<String, String> getCourierData() {

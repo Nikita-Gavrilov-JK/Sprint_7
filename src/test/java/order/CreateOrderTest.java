@@ -5,7 +5,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 import steps.BaseTest;
-import steps.OrderStepTest;
+import steps.OrderStep;
 import java.util.stream.Stream;
 import static org.hamcrest.Matchers.notNullValue;
 import static org.junit.jupiter.params.provider.Arguments.arguments;
@@ -27,7 +27,7 @@ public class CreateOrderTest extends BaseTest {
                 "Иван", "Смирнов", "ул. Гоголя", "4",
                 "+79991234567", 5, "2025-06-17", "Позвонить", colors
         );
-        Response response = new OrderStepTest().createOrder(orderModel);
+        Response response = new OrderStep().createOrder(orderModel);
 
         response.then().log().all()
                 .statusCode(201)

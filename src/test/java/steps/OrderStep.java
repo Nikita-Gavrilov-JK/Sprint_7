@@ -6,7 +6,7 @@ import order.OrderModel;
 import static io.restassured.RestAssured.given;
 import static io.restassured.http.ContentType.JSON;
 
-public class OrderStepTest {
+public class OrderStep {
     @Step("Создание заказа")
     public Response createOrder(OrderModel orderModel) {
         return given()

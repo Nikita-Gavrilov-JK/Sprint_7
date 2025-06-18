@@ -5,7 +5,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import steps.BaseTest;
-import steps.CourierStepTest;
+import steps.CourierStep;
 import java.util.Map;
 
 import static org.hamcrest.Matchers.*;
@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class CreateCourierTest extends BaseTest {
 
-    private final CourierStepTest courierStepTest = new CourierStepTest();
+    private final CourierStep courierStepTest = new CourierStep();
     private int createdCourierId;
 
     @Test
